@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Cpp_TestObject.h"
 #include "Cpp_TestActor.generated.h"
 
 USTRUCT(BlueprintType)
@@ -35,6 +36,9 @@ public:
 	UPROPERTY(EditInstanceOnly)
 	//UPROPERTY(VisibleInstanceOnly)
 	float FloatValue_Instance;
+
+	UPROPERTY(Instanced, EditInstanceOnly)
+	UCpp_TestObject* TestObject;
 
 	UPROPERTY(BlueprintReadWrite)
 	float FloatValue_RW;

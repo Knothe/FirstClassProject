@@ -9,9 +9,12 @@
 /**
  * 
  */
-UCLASS(BlueprintType, Blueprintable)
+UCLASS(BlueprintType, Blueprintable, DefaultToInstanced, EditInlineNew, CollapseCategories)
 class FIRSTPROJECT_API UCpp_TestObject : public UObject
 {
 	GENERATED_BODY()
+public:
+	UPROPERTY(EditAnywhere)
+		float FloatValue;
 	
 };
